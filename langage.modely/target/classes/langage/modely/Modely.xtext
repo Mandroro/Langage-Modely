@@ -1,0 +1,9 @@
+grammar langage.modely.Modely with org.eclipse.xtext.common.Terminals
+
+generate modely "http://www.modely.langage/Modely"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
